@@ -1,4 +1,4 @@
-# python-mordecai-windows
+# Mordecai Geoparser on Windows
 
 Richard Wen <rrwen.dev@gmail.com>  
   
