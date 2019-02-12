@@ -1,7 +1,9 @@
 # Mordecai Geoparser on Windows
 
 Richard Wen <rrwen.dev@gmail.com>  
-  
+
+* [Releases](https://github.com/ryerson-ggl/mordecai-geoparser-on-windows/releases)
+ 
 Instructions for installing the mordecai python full text geoparsing library on windows 10.
 
 ## Install
