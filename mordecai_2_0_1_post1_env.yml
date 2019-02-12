@@ -11,5 +11,5 @@ dependencies:
   - numpy=1.12
   - urllib3=1.22
   - pip:
-    - mordecai
+    - mordecai=2.0.1.post1
   - python=3

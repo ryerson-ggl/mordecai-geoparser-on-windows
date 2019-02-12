@@ -45,7 +45,7 @@ python -m spacy download en_core_web_lg
 ### Step 3. Download the geonames index and decompress it into a folder
 
 * Download the index at [https://s3.amazonaws.com/ahalterman-geo/geonames_index.tar.gz](https://s3.amazonaws.com/ahalterman-geo/geonames_index.tar.gz)
-* The file should be around 1.58GB, which may take a while
+* The file should be around 1.58 GB, which may take a while
 * When complete, extract the downloaded `geonames_index.tar.gz` file into a folder named `geonames`
 
 *NOTE: Keep in mind the full path of your `geonames` folder*
@@ -143,6 +143,51 @@ After printing the result with `pprint(result)`, you should get:
   'word': 'Ottawa'}]
 ```
 
+## Tips
+
+### Useful conda commands
+
+If you are inside the `mordecai-2.0.1.post1` Python environment, you can deactivate it by simply entering:
+
+```
+deactivate
+```
+
+### Useful docker commands
+
+If you are done with `geonames_index` docker container, you may wish to stop it:
+
+```
+docker stop geonames_index
+```
+
+To start the `geonames_index`, you can use:
+
+```
+docker start geonames_index
+```
+
+To remove the `geonames_index` permanently:
+
+```
+docker container rm geonames_index
+```
+
+## Additional Information
+
+These instructions were tested on a machine with the following specifications:
+
+* **Operating System**: Windows 10 Professional 64-bit
+* **Processor**: i7-6700K Quad-Core @ 4.00GHz
+* **Memory**: 16 GB
+* **Storage**: 256 GB + 512 GB SSD (Read: Up to 540 MB/sec, Write: Up to 520 MB/sec)
+
+The following software was installed on the above machine:
+
+* [git version 2.19.0.windows.1](https://github.com/git-for-windows/git/releases/tag/v2.19.0.windows.1)
+* [Anaconda 5.2.0 Python 3.7 Version (64 bit)](https://repo.continuum.io/archive/Anaconda2-5.2.0-Windows-x86_64.exe)
+* [Docker Community Edition 2.0.0.2 2019-01-16](https://download.docker.com/win/stable/30215/Docker%20for%20Windows%20Installer.exe)
+
 ## Citation
 
 As noted by the authors in the [mordecai repository](https://github.com/openeventdata/mordecai), please use the following citation information if you are using the mordecai software:
@@ -166,3 +211,5 @@ As noted by the authors in the [mordecai repository](https://github.com/openeven
 * [conda environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 * [docker command reference](https://docs.docker.com/engine/reference/commandline/docker/)
 * [spaCy Natural Language Processing](https://spacy.io/)
+* [git for windows releases](https://github.com/git-for-windows/git/releases)
+* [Anaconda installer archive](https://repo.continuum.io/archive/)
