@@ -56,7 +56,7 @@ python -m spacy download en_core_web_lg
 docker run --name geonames_index -d -p 127.0.0.1:9200:9200 -v <PATH_TO>/geonames_index/:/usr/share/elasticsearch/data elasticsearch:5.5.2
 ```
 
-*NOTE: Replace <PATH_TO> with the full path to your `geonames` folder*
+*NOTE: Replace `<PATH_TO>` with the full path to your `geonames` folder*
 
 ### Step 5. Check that the geonames index docker is running
 
