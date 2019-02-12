@@ -12,6 +12,14 @@ Instructions for installing the mordecai python full text geoparsing library on 
 2. Install [Anaconda Python](https://www.anaconda.com/)
 3. Install [Docker for Windows](https://docs.docker.com/docker-for-windows/release-notes/)
 
+In a console, enter the following commands to check that they are working:
+
+```
+git --help
+conda --help
+docker --help
+```
+
 ## Setup
 
 ### Step 1. Create the mordecai-2.0.1.post1 Python environment
