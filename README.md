@@ -185,7 +185,7 @@ These instructions were tested on a machine with the following specifications:
 The following software was installed on the above machine:
 
 * [git version 2.19.0.windows.1](https://github.com/git-for-windows/git/releases/tag/v2.19.0.windows.1)
-* [Anaconda 5.2.0 Python 3.7 Version (64 bit)](https://repo.continuum.io/archive/Anaconda2-5.2.0-Windows-x86_64.exe)
+* [Anaconda 5.2.0 Python 3.7 Version (64 bit)](https://repo.continuum.io/archive/Anaconda3-5.2.0-Windows-x86_64.exe)
 * [Docker Community Edition 2.0.0.2 2019-01-16](https://download.docker.com/win/stable/30215/Docker%20for%20Windows%20Installer.exe)
 
 ## Citation
