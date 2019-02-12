@@ -12,7 +12,7 @@ Instructions for installing the mordecai python full text geoparsing library on 
 
 ## Setup
 
-### Step 1. Create the `mordecai-2.0.1.post1` Python environment
+### Step 1. Create the mordecai-2.0.1.post1 Python environment
 
 In a command console, clone this repository and move into the cloned folder:
 
@@ -213,3 +213,4 @@ As noted by the authors in the [mordecai repository](https://github.com/openeven
 * [spaCy Natural Language Processing](https://spacy.io/)
 * [git for windows releases](https://github.com/git-for-windows/git/releases)
 * [Anaconda installer archive](https://repo.continuum.io/archive/)
+* [Docker Windows releases](https://docs.docker.com/docker-for-windows/release-notes/)
