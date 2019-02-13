@@ -52,11 +52,11 @@ Inside your `mordecai-2.0.1.post1` environment, download the [spaCy](https://spa
 python -m spacy download en_core_web_lg
 ```
 
-### Step 3. Download the geonames index and decompress it into a folder
+### Step 3. Download the geonames index and uncompress it into a folder
 
 * Download the index at [https://s3.amazonaws.com/ahalterman-geo/geonames_index.tar.gz](https://s3.amazonaws.com/ahalterman-geo/geonames_index.tar.gz)
 * The file should be around 1.58 GB, which may take a while
-* When complete, extract the downloaded `geonames_index.tar.gz` file into a folder named `geonames`
+* When complete, extract the downloaded `geonames_index.tar.gz` file into a folder named `geonames_index`
 
 *NOTE: Keep in mind the full path of your `geonames` folder*
 
