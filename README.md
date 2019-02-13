@@ -62,6 +62,8 @@ python -m spacy download en_core_web_lg
 
 ### Step 4. Run the geonames index docker
 
+In a command console, run:
+
 ```
 docker run --name geonames_index -d -p 127.0.0.1:9200:9200 -v <PATH_TO>/geonames_index/:/usr/share/elasticsearch/data elasticsearch:5.5.2
 ```
@@ -70,7 +72,8 @@ docker run --name geonames_index -d -p 127.0.0.1:9200:9200 -v <PATH_TO>/geonames
 
 ### Step 5. Check that the geonames index docker is running
 
-Check on the `geonames_index` docker container:
+In the console, check the `geonames_index` docker container:
+
 ```
 docker ps -f name=geonames_index
 ```
@@ -84,7 +87,7 @@ CONTAINER ID        IMAGE                 COMMAND                  CREATED      
 
 ### Step 6. Check that the geonames index is accessible
 
-Navigate your web browser to:  
+Open a web browser and go to:  
   
 [http://localhost:9200/_cat/indices?v](http://localhost:9200/_cat/indices?v)
 
@@ -97,13 +100,13 @@ yellow open   geonames eWVK3y2ETaufWKEFZmeK2Q   1   1   11741135            0   
 
 ### Step 7. Check that mordecai is running properly
 
-Activate the `mordecai-2.0.1.post1` Python environment:
+In a command console, activate the `mordecai-2.0.1.post1` Python environment:
 
 ```
 activate mordecai-2.0.1.post1
 ```
 
-Enter a Python console:
+Enter the Python console:
 
 ```
 python
@@ -153,6 +156,8 @@ After printing the result with `pprint(result)`, you should get:
   'word': 'Ottawa'}]
 ```
 
+If your output looks like the above, the mordecai geoparser library should be installed correctly.
+
 ## Tips
 
 ### Useful conda commands
@@ -165,7 +170,7 @@ deactivate
 
 ### Useful docker commands
 
-If you are done with `geonames_index` docker container, you may wish to stop it:
+If you are done with `geonames_index` docker container, you may wish to stop it with:
 
 ```
 docker stop geonames_index
@@ -177,7 +182,7 @@ To start the `geonames_index`, you can use:
 docker start geonames_index
 ```
 
-To remove the `geonames_index` permanently:
+To remove the `geonames_index` permanently, use:
 
 ```
 docker container rm geonames_index
@@ -190,7 +195,7 @@ These instructions were tested on a machine with the following specifications:
 * **Operating System**: Windows 10 Professional 64-bit
 * **Processor**: i7-6700K Quad-Core @ 4.00GHz
 * **Memory**: 16 GB
-* **Storage**: 256 GB + 512 GB SSD (Read: Up to 540 MB/sec, Write: Up to 520 MB/sec)
+* **Storage**: 256 GB + 512 GB SSD
 
 The following software was installed on the above machine:
 
